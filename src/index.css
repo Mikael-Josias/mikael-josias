@@ -3,9 +3,11 @@
 
 @theme {
   --color-navy-500: #182437;
+  --color-moss-500: #047654;
   --color-wheat-600: #FFF4BD;
   --color-wheat-500: #FFFBE6;
   --color-cement-600: #2e2e2e;
+  --color-cement-500: #4e4e4e;
   --font-amaranth: "Amaranth", serif;
   --font-ubuntu: "Ubuntu", serif;
 }
