@@ -11,6 +11,7 @@
   --color-cement-400: #6e6e6e;
   --font-amaranth: "Amaranth", serif;
   --font-ubuntu: "Ubuntu", serif;
+  --font-sans: var(--font-ubuntu);
 }
 
 @custom-variant dark (&:where(.dark, .dark *));

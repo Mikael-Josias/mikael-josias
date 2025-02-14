@@ -92,17 +92,17 @@ function TabsContainer() {
                 <div key={i} className="flex gap-3 pb-6 border-b-[1px] border-b-black/25 dark:border-b-white/25">
                   <img src={e.imgUrl} alt={e.enterpriseName + " logo"} className="h-16 w-16 rounded-md select-none pointer-events-none" />
                   <div className="flex flex-col">
-                    <span className="text-cement-500 dark:text-white/50 text-xs font-bold">
+                    <span className="text-cement-500 dark:text-white/50 text-xs font-medium">
                       {e.joinedAt + " - " + e.terminatedAt}
                     </span>
                     <span className="text-cement-600 dark:text-white font-bold">
                       {e.enterpriseName}
                     </span>
-                    <span className="text-cement-500 dark:text-white/50 text-xs font-bold capitalize">
+                    <span className="text-cement-500 dark:text-white/50 text-xs font-medium capitalize">
                       {e.role}
                     </span>
                     <ul className="list-disc pl-6 pt-1.5">
-                      {e.description.map((d, i) => <li key={i} className="text-cement-400 dark:text-white text-sm">{d}</li>)}
+                      {e.description.map((d, i) => <li key={i} className="text-cement-400 dark:text-white text-sm font-light">{d}</li>)}
                     </ul>
                   </div>
                 </div>
@@ -115,17 +115,17 @@ function TabsContainer() {
                 <div key={i} className="flex gap-3 pb-6 border-b-[1px] border-b-black/25 dark:border-b-white/25">
                   <img src={e.imgUrl} alt={e.enterpriseName + " logo"} className="h-16 w-16 rounded-md select-none pointer-events-none" />
                   <div className="flex flex-col">
-                    <span className="text-cement-400 dark:text-white/50 text-xs font-bold">
+                    <span className="text-cement-400 dark:text-white/50 text-xs font-medium">
                       {e.joinedAt + " - " + e.terminatedAt}
                     </span>
                     <span className="text-cement-600 dark:text-white font-bold">
                       {e.enterpriseName}
                     </span>
-                    <span className="text-cement-400 dark:text-white/50 text-xs font-bold capitalize">
+                    <span className="text-cement-400 dark:text-white/50 text-xs font-medium capitalize">
                       {e.role}
                     </span>
                     <ul className="list-disc pl-6 pt-1.5">
-                      {e.description.map((d, i) => <li key={i} className="text-cement-400 dark:text-white text-sm">{d}</li>)}
+                      {e.description.map((d, i) => <li key={i} className="text-cement-400 dark:text-white text-sm font-light">{d}</li>)}
                     </ul>
                   </div>
                 </div>
