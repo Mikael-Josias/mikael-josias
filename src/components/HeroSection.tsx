@@ -3,7 +3,7 @@ import SocialBar from "./SocialBar"
 
 function HeroSection() {
   return (
-    <section className="flex flex-col-reverse md:flex-row items-start w-full md:max-w-3xl gap-3 md:gap-10 py-10 px-10 md:px-0">
+    <section className="flex flex-col-reverse md:flex-row items-start w-full md:max-w-3xl gap-3 md:gap-10 py-10 px-5 md:px-0">
       <div className="flex flex-col gap-3 md:gap-6">
         <h2 className="font-amaranth text-2xl md:text-5xl text-cement-600 dark:text-white ">Hello! 👋</h2>
         <span className="text-sm md:text-lg font-light text-cement-500 dark:text-white">

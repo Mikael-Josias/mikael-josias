@@ -60,7 +60,7 @@ function TabsContainer() {
   const [selectedTab, setSelectedTab] = useState<TABS_NAMES>("education")
 
   return (
-    <section className="flex flex-col gap-6 md:gap-8 px-10 md:px-0 py-5 md:py-10 w-full md:w-3xl" >
+    <section className="flex flex-col gap-6 md:gap-8 px-5 md:px-0 py-5 md:py-10 w-full md:w-3xl" >
       {/* TABS OPTIONS */}
       <div className="flex border-[1px] border-wheat-600 dark:border-white/25 rounded-md w-full overflow-hidden">
         <label htmlFor="experience" className="flex items-center justify-center w-full py-3 text-cement-600 dark:text-white relative cursor-pointer font-medium text-base">

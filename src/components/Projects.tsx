@@ -22,7 +22,7 @@ const projects = [
 
 function Projects() {
   return (
-    <section className="flex flex-col gap-6 md:gap-10 w-full md:max-w-3xl px-10 md:px-0 pt-5 pb-10">
+    <section className="flex flex-col gap-6 md:gap-10 w-full md:max-w-3xl px-5 md:px-0 pt-5 pb-10">
       <h2 className="font-amaranth text-2xl md:text-3xl text-cement-600 dark:text-white ">Projects 🌟</h2>
       <div className="flex flex-col md:flex-row flex-wrap gap-6 md:gap-10">
         {projects?.map((p, i) => {
