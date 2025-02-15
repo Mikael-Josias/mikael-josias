@@ -1,5 +1,6 @@
 import Header from "./components/Header"
 import HeroSection from "./components/HeroSection"
+import Projects from "./components/Projects"
 import TabsContainer from "./components/TabsContainer"
 import { ThemeProvider } from "./contexts/ThemeProvider"
 
@@ -10,6 +11,7 @@ function App() {
         <Header />
         <HeroSection />
         <TabsContainer />
+        <Projects />
       </main>
     </ThemeProvider>
   )
