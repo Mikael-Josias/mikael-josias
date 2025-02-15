@@ -18,7 +18,7 @@ function HeroSection() {
           <SocialBar />
         </div>
       </div>
-      <img src={Photo1} alt="Mikael Josias photo" className="rounded-3xl max-h-96 w-full md:max-h-60 md:max-w-[300px] md:h-full object-cover select-none pointer-events-none" />
+      <img src={Photo1} alt="Mikael Josias photo" className="rounded-3xl max-h-96 md:max-h-60 w-full md:max-w-[300px] md:h-full object-cover select-none pointer-events-none" />
     </section>
   )
 }

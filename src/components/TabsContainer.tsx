@@ -62,24 +62,24 @@ function TabsContainer() {
   return (
     <section className="flex flex-col gap-6 md:gap-8 px-5 md:px-0 py-5 md:py-10 w-full md:w-3xl" >
       {/* TABS OPTIONS */}
-      <div className="flex border-[1px] border-wheat-600 dark:border-white/25 rounded-md w-full overflow-hidden">
-        <label htmlFor="experience" className="flex items-center justify-center w-full py-3 text-cement-600 dark:text-white relative cursor-pointer font-medium text-base">
+      <div className="flex border-[1px] border-black/25 dark:border-white/25 rounded-md w-full overflow-hidden">
+        <label htmlFor="experience" className="flex items-center justify-center w-full py-3 text-cement-600 dark:text-white relative cursor-pointer font-medium text-base hover:bg-black/5 dark:hover:bg-white/2">
           <input type="radio" id="experience" name="tab_option" className="invisible" value={"experience"} onChange={(e) => setSelectedTab(e.target.value as TABS_NAMES)} checked={selectedTab === "experience"} />
           <span className="z-10">
             experience
           </span>
           {selectedTab === "experience" ?
-            <div className="h-full w-full absolute bg-wheat-600 dark:bg-white/25 z-0"></div> :
+            <div className="h-full w-full absolute bg-black/25 dark:bg-white/25 z-0"></div> :
             <></>
           }
         </label>
-        <label htmlFor="education" className="flex items-center justify-center w-full py-3 text-cement-600 dark:text-white relative cursor-pointer font-medium text-base">
+        <label htmlFor="education" className="flex items-center justify-center w-full py-3 text-cement-600 dark:text-white relative cursor-pointer font-medium text-base hover:bg-black/5 dark:hover:bg-white/2">
           <input type="radio" id="education" name="tab_option" className="invisible" value={"education"} onChange={(e) => setSelectedTab(e.target.value as TABS_NAMES)} checked={selectedTab === "education"} />
           <span className="z-10">
             education
           </span>
           {selectedTab === "education" ?
-            <div className="h-full w-full absolute bg-wheat-600 dark:bg-white/25 z-0"></div> :
+            <div className="h-full w-full absolute bg-black/25 dark:bg-white/25 z-0"></div> :
             <></>
           }
         </label>

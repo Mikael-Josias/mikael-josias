@@ -10,19 +10,19 @@ import MailLight from "../assets/mail-light.svg"
 function SocialBar() {
   return (
     <div className="flex gap-3 items-center">
-      <a href={CV} download={"Mikael_Josias_CV"} className="flex gap-1.5 items-center bg-moss-500 text-white font-medium text-sm p-2.5 rounded-md w-min text-nowrap">
+      <a href={CV} download={"Mikael_Josias_CV"} className="flex gap-1.5 items-center bg-moss-500 text-white font-medium text-sm p-2.5 rounded-md w-min text-nowrap hover:bg-[#004833] transition-colors">
         Download CV
         <FileDown size={16} color="white" />
       </a>
-      <a href="https://github.com/Mikael-Josias" target="_blank">
+      <a href="https://github.com/Mikael-Josias" target="_blank" className="hover:translate-y-[-4px] transition">
         <img src={GitHub} alt="visit github profile" className="w-5 dark:hidden" />
         <img src={GitHubLight} alt="visit github profile" className="w-5 hidden dark:block" />
       </a>
-      <a href="https://www.linkedin.com/in/mikael-josias/" target="_blank">
+      <a href="https://www.linkedin.com/in/mikael-josias/" target="_blank" className="hover:translate-y-[-4px] transition">
         <img src={LinkedIn} alt="visit linkedin profile" className="w-5 dark:hidden" />
         <img src={LinkedInLight} alt="visit linkedin profile" className="w-5 hidden dark:block" />
       </a>
-      <a href="mailto:mikaeljosias@protonmail.com">
+      <a href="mailto:mikaeljosias@protonmail.com" className="hover:translate-y-[-4px] transition">
         <img src={Mail} alt="send me a email" className="w-5 dark:hidden" />
         <img src={MailLight} alt="send me a email" className="w-5 hidden dark:block text-white" />
       </a>
