@@ -27,7 +27,7 @@ function Projects() {
       <div className="flex flex-col md:flex-row flex-wrap gap-6 md:gap-10">
         {projects?.map((p, i) => {
           return (
-            <div key={i} className="flex flex-col gap-2 w-full md:w-[calc(50%-20px)] pb-5 border-b-[1px] border-b-black/25 dark:border-b-white/25">
+            <div key={i} className="flex flex-col gap-2 w-full md:w-[calc(50%-20px)] pb-5 border-b-[1px] border-b-black/25 dark:border-b-white/25 nth-last-[-n+1]:border-0 md:nth-last-[-n+2]:border-0">
               <img src={p.imgUrl} alt={p.name + " project thumbnail"} className="shadow-2xl rounded-md" />
               <span className="text-base md:text-lg font-medium text-cement-600 dark:text-white">
                 {p.name}
