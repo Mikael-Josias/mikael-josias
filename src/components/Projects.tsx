@@ -14,8 +14,8 @@ const projects = [
       "ViteJS",
       "GitHub",
     ],
-    siteUrl: "",
-    githubUrl: "",
+    siteUrl: "https://mikael-josias.github.io/Mikael-Josias/",
+    githubUrl: "https://github.com/Mikael-Josias/Mikael-Josias",
   }
 ]
 
