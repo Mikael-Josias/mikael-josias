@@ -3,7 +3,7 @@
   <p>📚 Estudante de <b>Engenharia da Computação</b> na Univesp.</p>
   <p>💻 <b>Programador Full-Stack</b></p>
   
-  Veja meu [Portfolio](https://mikael-josias.github.io/Mikael-Josias/)
+  🌐 Veja meu [Portfolio](https://mikael-josias.github.io/Mikael-Josias/)
 </div>
 
 ___
