@@ -5,15 +5,6 @@ import GitHubLight from "../assets/github-light.svg";
 
 const projects = [
   {
-    imgUrl: PortfolioThumb,
-    name: "Portfolio",
-    descrition:
-      "this website seeks showcase my works, skills and experience as a developer.",
-    tags: ["React", "TypeScript", "TailWindCSS", "ViteJS", "GitHub"],
-    siteUrl: "https://mikael-josias.github.io/Mikael-Josias/",
-    githubUrl: "https://github.com/Mikael-Josias/Mikael-Josias",
-  },
-  {
     imgUrl: FerramentasAppThumb,
     name: "Ferramentas App",
     descrition:
@@ -21,6 +12,15 @@ const projects = [
     tags: ["React", "TypeScript", "TailWindCSS", "NextJS", "GitHub", "Vercel"],
     siteUrl: "https://ferramentas-app.vercel.app/",
     githubUrl: "https://github.com/Mikael-Josias/ferramentas-app",
+  },
+  {
+    imgUrl: PortfolioThumb,
+    name: "Portfolio",
+    descrition:
+      "this website seeks showcase my works, skills and experience as a developer.",
+    tags: ["React", "TypeScript", "TailWindCSS", "ViteJS", "GitHub"],
+    siteUrl: "https://mikael-josias.github.io/Mikael-Josias/",
+    githubUrl: "https://github.com/Mikael-Josias/Mikael-Josias",
   },
 ];
 
