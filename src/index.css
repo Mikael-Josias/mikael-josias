@@ -1,17 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Amaranth:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Amaranth:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 @import "tailwindcss";
 
 @theme {
-  --color-navy-500: #182437;
-  --color-moss-500: #047654;
-  --color-wheat-600: #FFF4BD;
-  --color-wheat-500: #FFFBE6;
-  --color-cement-600: #2e2e2e;
-  --color-cement-500: #4e4e4e;
-  --color-cement-400: #6e6e6e;
-  --font-amaranth: "Amaranth", serif;
-  --font-ubuntu: "Ubuntu", serif;
-  --font-sans: var(--font-ubuntu);
+    --color-navy-500: #182437;
+    --color-moss-500: #047654;
+    --color-wheat-600: #fff4bd;
+    --color-wheat-500: #fffbe6;
+    --color-cement-600: #2e2e2e;
+    --color-cement-500: #4e4e4e;
+    --color-cement-400: #6e6e6e;
+    --font-amaranth: "Amaranth", serif;
+    --font-ubuntu: "Ubuntu", serif;
+    --font-sans: var(--font-ubuntu);
 }
 
 @custom-variant dark (&:where(.dark, .dark *));
+
+::view-transition-old(root),
+::view-transition-new(root) {
+    animation: none;
+    mix-blend-mode: normal;
+}
