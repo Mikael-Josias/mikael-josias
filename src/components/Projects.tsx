@@ -1,6 +1,7 @@
 import { Globe } from "lucide-react";
 import PortfolioThumb from "../assets/projects/portfolio.png";
 import FerramentasAppThumb from "../assets/projects/ferramentas-app.png";
+import AtmosThumb from "../assets/projects/atmos.png";
 import GitHubLight from "../assets/github-light.svg";
 
 const projects = [
@@ -12,6 +13,15 @@ const projects = [
     tags: ["React", "TypeScript", "TailWindCSS", "NextJS", "GitHub", "Vercel"],
     siteUrl: "https://ferramentas-app.vercel.app/",
     githubUrl: "https://github.com/Mikael-Josias/ferramentas-app",
+  },
+  {
+    imgUrl: AtmosThumb,
+    name: "Atmos: Weather Forecast",
+    descrition:
+      "An app to search the Weather Forecast in any city in the World!",
+    tags: ["React", "TypeScript", "TailWindCSS", "NextJS", "GitHub", "Vercel"],
+    siteUrl: "https://atmos-pi.vercel.app/",
+    githubUrl: "https://github.com/Mikael-Josias/atmos",
   },
   {
     imgUrl: PortfolioThumb,
@@ -40,7 +50,7 @@ function Projects() {
               <img
                 src={p.imgUrl}
                 alt={p.name + " project thumbnail"}
-                className="shadow-2xl rounded-md"
+                className="shadow-2xl rounded-md w-full object-cover object-left-top aspect-video cursor-pointer"
               />
               <span className="text-base md:text-lg font-medium text-cement-600 dark:text-white">
                 {p.name}
