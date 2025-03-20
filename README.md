@@ -4,7 +4,7 @@
   <p>💻 <b>Programador Full-Stack</b></p>
   
   <p>📄 Veja meu 
-  <a href="https://mikael-josias.github.io/Mikael-Josias/" target="_blank" ><b>Portfolio</b></a>
+  <a href="https://mikael-josias.github.io/mikael-josias/" target="_blank" ><b>Portfolio</b></a>
  </p>
 </div>
 
