@@ -29,7 +29,7 @@ const projects = [
     descrition:
       "this website seeks showcase my works, skills and experience as a developer.",
     tags: ["React", "TypeScript", "TailWindCSS", "ViteJS", "GitHub"],
-    siteUrl: "https://mikael-josias.github.io/Mikael-Josias/",
+    siteUrl: "https://mikael-josias.github.io/mikael-josias/",
     githubUrl: "https://github.com/Mikael-Josias/Mikael-Josias",
   },
 ];
