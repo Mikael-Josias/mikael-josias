@@ -12,6 +12,43 @@
     --font-amaranth: "Amaranth", serif;
     --font-ubuntu: "Ubuntu", serif;
     --font-sans: var(--font-ubuntu);
+    --animate-waving: waving_hand 2s infinite;
+
+    @keyframes waving_hand {
+        0% {
+            transform: rotate(4deg);
+        }
+        10% {
+            transform: rotate(-8deg);
+        }
+        20% {
+            transform: rotate(8deg);
+        }
+        30% {
+            transform: rotate(-8deg);
+        }
+        40% {
+            transform: rotate(14deg);
+        }
+        50% {
+            transform: rotate(-4deg);
+        }
+        60% {
+            transform: rotate(10deg);
+        }
+        70% {
+            transform: rotate(-4deg);
+        }
+        80% {
+            transform: rotate(14deg);
+        }
+        90% {
+            transform: rotate(-8deg);
+        }
+        100% {
+            transform: rotate(4deg);
+        }
+    }
 }
 
 @custom-variant dark (&:where(.dark, .dark *));
