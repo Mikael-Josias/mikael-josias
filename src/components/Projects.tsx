@@ -36,79 +36,77 @@ const projects = [
 
 function Projects() {
   return (
-    <section className="flex flex-col gap-6 md:gap-10 w-full md:max-w-3xl px-5 md:px-0 pt-5 pb-10">
-      <h2 className="font-amaranth text-2xl md:text-3xl text-cement-600 dark:text-white ">
-        Projects 🌟
-      </h2>
-      <div className="flex flex-col md:flex-row flex-wrap gap-6 md:gap-10">
-        {projects?.map((p, i) => {
-          return (
+    <>
+      <section className="w-full md:w-[720px] py-12 px-6 md:px-0 flex flex-col gap-8">
+        <h2 className="font-amaranth text-3xl text-cement-600 dark:text-white group">
+          Projects{" "}
+          <span className="relative">
+            <div className="absolute opacity-0 group-hover:opacity-100 group-hover:animate-ping duration-100 size-6 bg-yellow-500/60 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full"></div>
+            🌟
+          </span>
+        </h2>
+        <div className="flex flex-wrap gap-6 md:gap-10 w-full">
+          {projects.map((p, i) => (
             <div
               key={i}
-              className="flex flex-col gap-2 w-full md:w-[calc(50%-20px)] pb-5 border-b-[1px] border-b-black/25 dark:border-b-white/25 nth-last-[-n+1]:border-0 md:nth-last-[-n+2]:border-0"
+              className="w-full md:w-[calc(50%-20px)] flex flex-col gap-4 border-b-1 border-b-black/20 dark:border-b-white/20 last:border-none md:nth-last-[2n]:border-none pb-6 md:pb-10"
             >
               <img
                 src={p.imgUrl}
-                alt={p.name + " project thumbnail"}
-                className="shadow-2xl rounded-md w-full object-cover object-left-top aspect-video cursor-pointer"
+                alt={p.name}
+                className="object-left-top object-cover aspect-video rounded-lg shadow"
               />
-              <span className="text-base md:text-lg font-medium text-cement-600 dark:text-white">
-                {p.name}
-              </span>
-              <span className="text-sm text-cement-400 dark:text-white font-light">
-                {p.descrition}
-              </span>
-              <div className="flex gap-1.5 mb-3 flex-wrap">
-                {p.tags?.map((t, i) => {
-                  return (
-                    <span
-                      key={i}
-                      className="p-1.5 text-white bg-moss-500 text-xs font-normal rounded-md"
-                    >
-                      {t}
-                    </span>
-                  );
-                })}
+              <div className="flex flex-col gap-1">
+                <span className="text-cement-600 dark:text-white text-xl font-medium">
+                  {p.name}
+                </span>
+                <span className="text-cement-600 dark:text-white/80 text-sm font-normal">
+                  {p.descrition}
+                </span>
               </div>
-              {p.siteUrl !== "" && p.githubUrl !== "" ? (
-                <div className="flex gap-1.5 w-full">
-                  {p.siteUrl !== "" ? (
-                    <a
-                      href={p.siteUrl}
-                      target="_blank"
-                      className="flex items-center justify-center gap-1.5 p-1.5 rounded-md bg-white text-black text-xs font-normal"
-                    >
-                      <Globe size={14} color="black" />
-                      website
-                    </a>
-                  ) : (
-                    <></>
-                  )}
-                  {p.githubUrl !== "" ? (
-                    <a
-                      href={p.githubUrl}
-                      target="_blank"
-                      className="flex items-center justify-center gap-1.5 p-1.5 rounded-md bg-black text-white text-xs font-normal"
-                    >
-                      <img
-                        src={GitHubLight}
-                        alt="white github logo"
-                        className="size-3.5"
-                      />
-                      repo
-                    </a>
-                  ) : (
-                    <></>
-                  )}
-                </div>
-              ) : (
-                <></>
-              )}
+              <div className="flex flex-wrap gap-2 mt-2">
+                {p.tags.map((t, i) => (
+                  <span
+                    key={i}
+                    className="py-1 px-2 bg-moss-500 rounded-md text-white text-xs"
+                  >
+                    {t}
+                  </span>
+                ))}
+              </div>
+              <div className="flex gap-2 mt-2">
+                {p.siteUrl !== "" && (
+                  <a
+                    href={p.siteUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 py-1 px-2 rounded-md bg-white text-xs"
+                  >
+                    <Globe size={14} color="black" />
+                    website
+                  </a>
+                )}
+                {p.githubUrl !== "" && (
+                  <a
+                    href={p.githubUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 py-1 px-2 rounded-md bg-black text-white text-xs"
+                  >
+                    <img
+                      src={GitHubLight}
+                      alt="white github logo"
+                      className="size-3.5"
+                    />
+                    repo
+                  </a>
+                )}
+              </div>
             </div>
-          );
-        })}
-      </div>
-    </section>
+          ))}
+        </div>
+      </section>
+    </>
   );
 }
 
